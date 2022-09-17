@@ -8,7 +8,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nSelect Your Program: \n 1.CreateLinkedList\n 2.Reverse\n 3.Append\n 4.InsertAtParticularPosition\n 5.InsertAtFirst\n 6.POP\n 7.POPLast");
+                Console.WriteLine("\nSelect Your Program: \n 1.CreateLinkedList\n 2.Reverse\n 3.Append\n 4.InsertAtParticularPosition\n 5.InsertAtFirst\n 6.POP\n 7.POPLast\n 8.Size");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -48,10 +48,11 @@
                     case 7:
                         list.PopLast();
                         list.Display();
-                        
                         break;
-
-
+                    case 8:
+                        list.LinkedListSize();
+                        list.Display();
+                        break;
                     default:
                         Console.WriteLine("Invalid Choice");
                         break;
