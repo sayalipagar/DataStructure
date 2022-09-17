@@ -8,7 +8,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nSelect Your Program: \n 1.CreateLinkedList\n 2.Reverse\n 3.Append\n 4.InsertAtParticularPosition;");
+                Console.WriteLine("\nSelect Your Program: \n 1.CreateLinkedList\n 2.Reverse\n 3.Append\n 4.InsertAtParticularPosition\n 5.InsertAtFirst");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,9 +32,16 @@
                     case 4:
                         list.Add(56);
                         list.Add(70);
-                        list.InsertAtParticularPosition(1, 30);
+                        list.InsertAtParticularPosition(2, 30);
                         list.Display();
                         break;
+                    case 5:
+                        list.Add(56);
+                        list.Add(70);
+                        list.InsertAtFirstPosition(1, 30);
+                        list.Display();
+                        break;
+
                     default:
                         Console.WriteLine("Invalid Choice");
                         break;
