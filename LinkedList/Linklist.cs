@@ -108,6 +108,19 @@ namespace LinkedList
                 temp.next = node;
             }
         }
+        public Node Pop()
+        {
+            Node node = head;
+            if (head == null)
+            {
+                Console.WriteLine("liklist is empty");
+            }
+            else
+            {
+                head = head.next;
+            }
+            return node;
+        }
         internal void Display()                            // Display Method - To Display Content in Output
         {
             Node temp = this.head;
